@@ -4,11 +4,7 @@ namespace API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class BaseAPIController
+    public class BaseAPIController : ControllerBase
     {
-        public BaseAPIController()
-        {
-            
-        }
     }
 }

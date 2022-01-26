@@ -54,3 +54,7 @@ C:\Users\Omnis\OneDrive\Рабочий стол\Project\ServerApp\App\API\obj\De
 C:\Users\Omnis\OneDrive\Рабочий стол\Project\ServerApp\App\API\obj\Debug\net5.0\ref\API.dll
 C:\Users\Omnis\OneDrive\Рабочий стол\Project\ServerApp\App\API\obj\Debug\net5.0\API.pdb
 C:\Users\Omnis\OneDrive\Рабочий стол\Project\ServerApp\App\API\obj\Debug\net5.0\API.genruntimeconfig.cache
+C:\Users\Omnis\OneDrive\Рабочий стол\Project\ServerApp\App\API\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Omnis\OneDrive\Рабочий стол\Project\ServerApp\App\API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Omnis\OneDrive\Рабочий стол\Project\ServerApp\App\API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Omnis\OneDrive\Рабочий стол\Project\ServerApp\App\API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
