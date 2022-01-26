@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using API.DataAccess;
 using API.DTOs;
 using API.Entities;
+using API.Interfaces;
 using API.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -14,9 +15,9 @@ namespace API.Controllers
     public class AccountController : BaseAPIController
     {
         private readonly DataContext _context;
-        private readonly TokenService _tokenService;
+        private readonly ITokenService _tokenService;
 
-        public AccountController(DataContext context, TokenService tokenService)
+        public AccountController(DataContext context, ITokenService tokenService)
         {
             _tokenService = tokenService;
             _context = context;
@@ -36,7 +37,7 @@ namespace API.Controllers
                 PasswordSalt = hmac.Key
             };
 
-            _context.Add(user);
+            _context.Users.Add(user);
 
             await _context.SaveChangesAsync();
 
