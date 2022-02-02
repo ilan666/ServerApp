@@ -1,22 +1,45 @@
-<nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
+<nav class="navbar navbar-expand-md navbar-dark sticky-top bg-warning">
     <div class="container">
-        <a class="navbar-brand" href="#">Example site</a>
+        <a class="navbar-brand">Example site</a>
 
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Lists</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Messages</a>
-            </li>
+            <ng-container *ngIf="currentUser$ | async">
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active" routerLink="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active" routerLink="/members">matches</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active" routerLink="/lists">Lists</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active" routerLink="/messages">Messages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active" routerLink="/test-errors">Errors</a>
+                </li>
+            </ng-container>
         </ul>
-        <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Username">
-            <input class="form-control mr-sm-2" type="text" placeholder="Password">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+
+        <div class="dropdown" *ngIf="currentUser$ | async" dropdown>
+            <a class="dropdown-toggle text-light" dropdownToggle>
+            Welcome user
+          </a>
+
+            <ul class="dropdown-menu" *dropdownMenu>
+                <li><a class="dropdown-item" href="#">Edit profile</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <div class="dropdown-divider"></div>
+                <li><a class="dropdown-item" routerLink="/" (click)="logout()">Logout</a></li>
+            </ul>
+        </div>
+
+
+        <form *ngIf="!(currentUser$ | async)" #loginForm="ngForm" class="form-inline mt-2 mt-md-0" (ngSubmit)="login()" autocomplete="off">
+            <input name="username" [(ngModel)]="model.username" class="form-control mr-sm-2" type="text" placeholder="Username">
+            <input name="password" [(ngModel)]="model.password" class="form-control mr-sm-2" type="password" placeholder="Password">
+            <button class="btn btn-info my-2 my-sm-0" type="submit">Login</button>
         </form>
     </div>
 </nav>
