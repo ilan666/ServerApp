@@ -61,3 +61,4 @@ C:\Users\Omnis\OneDrive\Рабочий стол\Project\ServerApp\App\API\bin\De
 C:\Users\Omnis\OneDrive\Рабочий стол\Project\ServerApp\App\API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Omnis\OneDrive\Рабочий стол\Project\ServerApp\App\API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\Omnis\OneDrive\Рабочий стол\Project\ServerApp\App\API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Omnis\OneDrive\Рабочий стол\Project\ServerApp\App\API\bin\Debug\net5.0\DataAccess\UserSeedData.json
