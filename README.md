@@ -1,2 +1,2 @@
 # ServerApp
-This is an example for minecraft website
+This is an example dating website
