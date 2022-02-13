@@ -11,7 +11,7 @@
         "City": "Welda",
         "Country": "Mauritania",
         "Photos": [{
-            "url": "https://randomuser.me/api/portraits/women/49.jpg",
+            "Url": "https://randomuser.me/api/portraits/women/49.jpg",
             "isMain": true
         }]
     },
@@ -28,7 +28,7 @@
         "City": "Rosedale",
         "Country": "Israel",
         "Photos": [{
-            "url": "https://randomuser.me/api/portraits/women/32.jpg",
+            "Url": "https://randomuser.me/api/portraits/women/32.jpg",
             "isMain": true
         }]
     },
@@ -45,7 +45,7 @@
         "City": "Abrams",
         "Country": "Kyrgyzstan",
         "Photos": [{
-            "url": "https://randomuser.me/api/portraits/women/9.jpg",
+            "Url": "https://randomuser.me/api/portraits/women/9.jpg",
             "isMain": true
         }]
     },
@@ -62,7 +62,7 @@
         "City": "Lorraine",
         "Country": "Poland",
         "Photos": [{
-            "url": "https://randomuser.me/api/portraits/women/53.jpg",
+            "Url": "https://randomuser.me/api/portraits/women/53.jpg",
             "isMain": true
         }]
     },
@@ -79,7 +79,7 @@
         "City": "Adelino",
         "Country": "Guatemala",
         "Photos": [{
-            "url": "https://randomuser.me/api/portraits/women/18.jpg",
+            "Url": "https://randomuser.me/api/portraits/women/18.jpg",
             "isMain": true
         }]
     },
@@ -96,7 +96,7 @@
         "City": "Gilmore",
         "Country": "Romania",
         "Photos": [{
-            "url": "https://randomuser.me/api/portraits/women/17.jpg",
+            "Url": "https://randomuser.me/api/portraits/women/17.jpg",
             "isMain": true
         }]
     },
@@ -113,7 +113,7 @@
         "City": "Nutrioso",
         "Country": "Colombia",
         "Photos": [{
-            "url": "https://randomuser.me/api/portraits/women/30.jpg",
+            "Url": "https://randomuser.me/api/portraits/women/30.jpg",
             "isMain": true
         }]
     },
@@ -130,7 +130,7 @@
         "City": "Marysville",
         "Country": "Niger",
         "Photos": [{
-            "url": "https://randomuser.me/api/portraits/women/18.jpg",
+            "Url": "https://randomuser.me/api/portraits/women/18.jpg",
             "isMain": true
         }]
     },
@@ -147,7 +147,7 @@
         "City": "Why",
         "Country": "French Guiana",
         "Photos": [{
-            "url": "https://randomuser.me/api/portraits/women/31.jpg",
+            "Url": "https://randomuser.me/api/portraits/women/31.jpg",
             "isMain": true
         }]
     },
@@ -164,7 +164,7 @@
         "City": "Machias",
         "Country": "Kiribati",
         "Photos": [{
-            "url": "https://randomuser.me/api/portraits/women/28.jpg",
+            "Url": "https://randomuser.me/api/portraits/women/28.jpg",
             "isMain": true
         }]
     }

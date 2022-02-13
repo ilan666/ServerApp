@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mquZIWxlS7NGlxrQePhBNdvEu69JMXQ9R11dliUuixx8W1lBQs13ZSsgDJ3VGiRdWoCkGVgK876TPoPiR2NXiA==",
+  "dgSpecHash": "ZrJjYO9Mj+Z7yvCvvwTeuHvdwXfpfig8/rwxOxK/dHJmQ830uusGMYV4kUJTqwXNqXD+OgN89Xczkp8GLR4Eog==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Omnis\\OneDrive\\Рабочий стол\\Project\\ServerApp\\App\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\Omnis\\OneDrive\\Рабочий стол\\Project\\ServerApp\\App\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Omnis\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\Omnis\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

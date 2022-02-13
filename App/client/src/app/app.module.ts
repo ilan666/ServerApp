@@ -15,6 +15,7 @@ import { CoreModule } from './modules/core.module';
 import { TestErrorsComponent } from './Errors/test-errors/test-errors.component';
 import { ErrorsInterceptor } from './interceptors/errors.interceptor';
 import { NotFoundComponent } from './Errors/not-found/not-found.component';
+import { JwtInterceptor } from './interceptors/jwt.interceptor';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,11 @@ import { NotFoundComponent } from './Errors/not-found/not-found.component';
     {
       provide: HTTP_INTERCEPTORS,
       useClass: ErrorsInterceptor,
+      multi: true
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: JwtInterceptor,
       multi: true
     }
   ],

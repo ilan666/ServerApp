@@ -4,6 +4,7 @@ import { MemberListComponent } from '../members/member-list/member-list.componen
 import { MemberDetailsComponent } from '../members/member-details/member-details.component';
 import { Routes, RouterModule } from '@angular/router';
 import { SharedModuleModule } from './shared-module.module';
+import { MemberCardComponent } from '../members/member-card/member-card.component';
 
 const routes: Routes = [
   {path: '', component:MemberListComponent, pathMatch:'full'},
@@ -18,11 +19,13 @@ const routes: Routes = [
   ],
   declarations: [
     MemberListComponent,
-    MemberDetailsComponent
+    MemberDetailsComponent,
+    MemberCardComponent
   ],
   exports: [
     MemberListComponent,
     MemberDetailsComponent,
+    MemberCardComponent,
     RouterModule
   ]
 })

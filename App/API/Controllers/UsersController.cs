@@ -27,13 +27,13 @@ namespace API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<MemberDTO>>> GetUsers()
         {
-            return Ok(_userRepository.GetMembersAsync());
+            return Ok(await _userRepository.GetMembersAsync());
         }
 
         [HttpGet("{username}")]
         public async Task<ActionResult<MemberDTO>> GetUser(string username)
         {
-            return Ok(_userRepository.GetMemberAsync(username));
+            return Ok(await _userRepository.GetMemberAsync(username));
         }
     }
 }
