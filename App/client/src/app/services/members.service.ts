@@ -20,4 +20,8 @@ constructor(private http: HttpClient) { }
   getMember(username: string): Observable<Member>{
     return this.http.get<Member>(this.baseURL + "users/" + username)
   }
+
+  updateMember(member: Member){
+    return this.http.put(this.baseURL + "users", member)
+  }
 }

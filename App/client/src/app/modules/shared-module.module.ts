@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ToastrModule } from 'ngx-toastr';
+import { TabsModule } from 'ngx-bootstrap/tabs';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { NgxGalleryModule } from '@kolkov/ngx-gallery';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 
 
@@ -11,11 +15,19 @@ import { ToastrModule } from 'ngx-toastr';
   imports: [
     CommonModule,
     ToastrModule.forRoot({
-      positionClass: 'toats-bottom-right'
-    })
+      positionClass: 'toast-bottom-right'
+    }),
+    TabsModule.forRoot(),
+    BsDropdownModule.forRoot(),
+    NgxGalleryModule,
+    NgxSpinnerModule
   ],
   exports: [
-    ToastrModule
+    ToastrModule,
+    TabsModule,
+    BsDropdownModule,
+    NgxGalleryModule,
+    NgxSpinnerModule
   ]
 })
 export class SharedModuleModule { }

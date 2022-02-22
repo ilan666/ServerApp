@@ -15,8 +15,10 @@ export class AuthGuard implements CanActivate {
     return this.accoutService.currentUser$.pipe(
       map(user => {
         if (user) return true;
-        this.toastr.error("Cannot access the wanted site");
-        return false
+        else {
+          this.toastr.error("Cannot access the wanted site");
+          return false
+        }
       })
     )
   }

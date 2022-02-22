@@ -5,6 +5,7 @@ import { MemberDetailsComponent } from '../members/member-details/member-details
 import { Routes, RouterModule } from '@angular/router';
 import { SharedModuleModule } from './shared-module.module';
 import { MemberCardComponent } from '../members/member-card/member-card.component';
+import { TabsModule } from 'ngx-bootstrap/tabs';
 
 const routes: Routes = [
   {path: '', component:MemberListComponent, pathMatch:'full'},
@@ -15,7 +16,8 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    SharedModuleModule
+    SharedModuleModule,
+    TabsModule.forRoot()
   ],
   declarations: [
     MemberListComponent,
@@ -26,7 +28,8 @@ const routes: Routes = [
     MemberListComponent,
     MemberDetailsComponent,
     MemberCardComponent,
-    RouterModule
+    RouterModule,
+    TabsModule
   ]
 })
 export class MembersModule { }
