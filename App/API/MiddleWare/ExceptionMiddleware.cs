@@ -22,8 +22,10 @@ namespace API.MiddleWare{
             this.env = env;
         }
 
-        public async Task InvokeAsync(HttpContext context){
-            try{
+        public async Task InvokeAsync(HttpContext context)
+        {
+            try
+            {
                 await next(context);
             }
             catch(Exception ex){

@@ -3,6 +3,7 @@ import { Observable } from 'rxjs';
 import { User } from '../models/User';
 import { AccountService } from '../services/account.service';
 import { HttpClient } from '@angular/common/http';
+import { MembersService } from '../services/members.service';
 
 @Component({
   selector: 'app-home',
@@ -13,7 +14,7 @@ export class HomeComponent implements OnInit {
 
   registerMode = false
   users: any
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private memberService: MembersService) {
    }
 
   ngOnInit(): void {
@@ -25,7 +26,7 @@ export class HomeComponent implements OnInit {
   }
 
   getUsers(){
-    this.http.get("https://localhost:5001/api/users").subscribe({
+    this.memberService.getMembers().subscribe({
       next: (users) => {this.users = users},
       error: (err) => {console.log(err);}
     })

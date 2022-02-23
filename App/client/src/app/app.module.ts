@@ -20,6 +20,7 @@ import { MembersModule } from './modules/members.module';
 import { SharedModuleModule } from './modules/shared-module.module';
 import { MemberEditComponent } from './member-edit/member-edit.component';
 import { LoadingInterceptor } from './interceptors/loading.interceptor';
+import { ServerErrorComponent } from './Errors/server-error/server-error.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { LoadingInterceptor } from './interceptors/loading.interceptor';
     MessagesComponent,
     TestErrorsComponent,
     NotFoundComponent,
-    MemberEditComponent
+    MemberEditComponent,
+    ServerErrorComponent
   ],
   imports: [
     SharedModuleModule,
