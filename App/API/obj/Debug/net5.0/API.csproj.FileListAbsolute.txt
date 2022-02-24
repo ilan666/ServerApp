@@ -68,3 +68,6 @@ C:\Users\Omnis\OneDrive\Рабочий стол\Project\ServerApp\App\API\bin\De
 C:\Users\Omnis\OneDrive\Рабочий стол\Project\ServerApp\App\API\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
 C:\Users\Omnis\OneDrive\Рабочий стол\Project\ServerApp\App\API\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 C:\Users\Omnis\OneDrive\Рабочий стол\Project\ServerApp\App\API\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Omnis\OneDrive\Рабочий стол\Project\ServerApp\App\API\bin\Debug\net5.0\CloudinaryDotNet.dll
+C:\Users\Omnis\OneDrive\Рабочий стол\Project\ServerApp\App\API\bin\Debug\net5.0\Microsoft.Extensions.WebEncoders.dll
+C:\Users\Omnis\OneDrive\Рабочий стол\Project\ServerApp\App\API\bin\Debug\net5.0\Newtonsoft.Json.dll

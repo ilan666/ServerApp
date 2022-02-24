@@ -5,6 +5,7 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { FileUploadModule } from 'ng2-file-upload';
 
 
 

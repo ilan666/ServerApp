@@ -15,9 +15,9 @@ busy(){
   this.spinner.show(
     undefined,
     {
-      bdColor: 'rgb(255, 255, 255)',
-      color: '#333333',
-      type: 'line-scale-party'
+      bdColor: 'rgb(0, 0, 0)',
+      color: '#fff',
+      type: 'ball-atom'
     }
   )
 }

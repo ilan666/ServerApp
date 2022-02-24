@@ -21,6 +21,8 @@ import { SharedModuleModule } from './modules/shared-module.module';
 import { MemberEditComponent } from './member-edit/member-edit.component';
 import { LoadingInterceptor } from './interceptors/loading.interceptor';
 import { ServerErrorComponent } from './Errors/server-error/server-error.component';
+import { PhotoEditorComponent } from './member-edit/photo-editor/photo-editor.component';
+import { FileUploadModule } from 'ng2-file-upload';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { ServerErrorComponent } from './Errors/server-error/server-error.compone
     TestErrorsComponent,
     NotFoundComponent,
     MemberEditComponent,
-    ServerErrorComponent
+    ServerErrorComponent,
+    PhotoEditorComponent
   ],
   imports: [
     SharedModuleModule,
@@ -42,7 +45,8 @@ import { ServerErrorComponent } from './Errors/server-error/server-error.compone
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    CoreModule
+    CoreModule,
+    FileUploadModule
   ],
   providers: [
     {
