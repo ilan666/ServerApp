@@ -5,6 +5,9 @@ import { User } from '../../models/User';
 import { AccountService } from '../../services/account.service';
 import { take } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { Photo } from '../../models/photo';
+import { MembersService } from '../../services/members.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-photo-editor',
@@ -19,7 +22,7 @@ export class PhotoEditorComponent implements OnInit {
   baseURL = environment.apiURL
   user:User;
 
-  constructor(private accountService: AccountService) {
+  constructor(private accountService: AccountService, private memberService: MembersService, private toastr: ToastrService) {
     this.accountService.currentUser$.pipe(take(1)).subscribe((user) => (this.user = user as User))
    }
 
@@ -52,5 +55,22 @@ export class PhotoEditorComponent implements OnInit {
 
   fileOverBase(e: any){
     this.hasBaseDropZoneOver = e
+  }
+
+  setMainPhoto(photo: Photo){
+    this.memberService.setMainPhoto(photo.id).subscribe(() => {
+      this.user.photoUrl = photo.url;
+      this.accountService.SetCurrentUser(this.user);
+
+      this.member.photoUrl = photo.url
+      this.member.photos.forEach(p => p.isMain = p.id === photo.id)
+    })
+  }
+
+  deletePhoto(photo: Photo){
+    this.memberService.deletePhoto(photo.id).subscribe(() => {
+      this.member.photos = this.member.photos.filter(p => p.id != photo.id)
+      this.toastr.success("Photo deleted");
+    })
   }
 }

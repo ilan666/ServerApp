@@ -43,4 +43,12 @@ constructor(private http: HttpClient) { }
       })
     )
   }
+
+  setMainPhoto(photoID: number): Observable<any>{
+    return this.http.put(this.baseURL + "users/set-main-photo/" + photoID, {})
+  }
+
+  deletePhoto(photoID: number): Observable<any>{
+    return this.http.delete(this.baseURL + "users/delete-photo/" + photoID)
+  }
 }
