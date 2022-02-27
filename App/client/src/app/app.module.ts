@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NavComponent } from './nav/nav.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
@@ -23,6 +23,8 @@ import { LoadingInterceptor } from './interceptors/loading.interceptor';
 import { ServerErrorComponent } from './Errors/server-error/server-error.component';
 import { PhotoEditorComponent } from './member-edit/photo-editor/photo-editor.component';
 import { FileUploadModule } from 'ng2-file-upload';
+import { TextInputComponent } from './forms/text-input/text-input.component';
+import { DateInputComponent } from './forms/date-input/date-input.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { FileUploadModule } from 'ng2-file-upload';
     NotFoundComponent,
     MemberEditComponent,
     ServerErrorComponent,
-    PhotoEditorComponent
+    PhotoEditorComponent,
+    TextInputComponent,
+    DateInputComponent
   ],
   imports: [
     SharedModuleModule,
@@ -46,7 +50,8 @@ import { FileUploadModule } from 'ng2-file-upload';
     FormsModule,
     BrowserAnimationsModule,
     CoreModule,
-    FileUploadModule
+    FileUploadModule,
+    ReactiveFormsModule
   ],
   providers: [
     {

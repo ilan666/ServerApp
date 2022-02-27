@@ -16,8 +16,7 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    SharedModuleModule,
-    TabsModule.forRoot()
+    SharedModuleModule
   ],
   declarations: [
     MemberListComponent,
@@ -28,8 +27,7 @@ const routes: Routes = [
     MemberListComponent,
     MemberDetailsComponent,
     MemberCardComponent,
-    RouterModule,
-    TabsModule
+    RouterModule
   ]
 })
 export class MembersModule { }
