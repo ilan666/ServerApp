@@ -6,6 +6,8 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { PaginationModule } from 'ngx-bootstrap/pagination';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -22,7 +24,8 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
     BsDropdownModule.forRoot(),
     NgxGalleryModule,
     NgxSpinnerModule,
-    BsDatepickerModule.forRoot()
+    BsDatepickerModule.forRoot(),
+    PaginationModule.forRoot()
   ],
   exports: [
     ToastrModule,
@@ -30,7 +33,9 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
     BsDropdownModule,
     NgxGalleryModule,
     NgxSpinnerModule,
-    BsDatepickerModule
+    BsDatepickerModule,
+    PaginationModule,
+    FormsModule
   ]
 })
 export class SharedModuleModule { }

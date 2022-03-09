@@ -2,6 +2,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { AccountService } from '../services/account.service';
 import { ToastrService } from 'ngx-toastr';
 import { AbstractControl, FormBuilder, FormControl, FormGroup, ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -14,10 +15,12 @@ export class RegisterComponent implements OnInit {
   @Output() cancelRegister = new EventEmitter<boolean>()
   constructor(private accountService: AccountService,
               private toastr: ToastrService,
-              private fb: FormBuilder) { }
+              private fb: FormBuilder,
+              private router: Router) { }
 
   registerForm: FormGroup;
   maxDate: Date
+  validationErrors: string[] = []
 
 
   ngOnInit(): void {
@@ -27,18 +30,16 @@ export class RegisterComponent implements OnInit {
   }
 
   register(){
-    // this.accountService.register(this.model).subscribe({
-    //   next: (data) => {
-    //     console.log(data)
-    //     this.cancel()
-    //     this.toastr.success("Successfuly registered!")
-    //   },
-    //   error: (err) => {console.log(err);
-    //                   this.toastr.error(err.error)}
-    // })
-
-    console.log(this.registerForm.value);
-
+    this.accountService.register(this.registerForm.value).subscribe({
+      next: (data) => {
+        this.router.navigate(['/members'])
+        this.cancel()
+        this.toastr.success("Successfuly registered!")
+      },
+      error: (err) => {
+        this.validationErrors = err
+      }
+    })
   }
 
   cancel(){

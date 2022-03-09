@@ -25,6 +25,7 @@ import { PhotoEditorComponent } from './member-edit/photo-editor/photo-editor.co
 import { FileUploadModule } from 'ng2-file-upload';
 import { TextInputComponent } from './forms/text-input/text-input.component';
 import { DateInputComponent } from './forms/date-input/date-input.component';
+import { PaginationModule } from 'ngx-bootstrap/pagination';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { DateInputComponent } from './forms/date-input/date-input.component';
     BrowserAnimationsModule,
     CoreModule,
     FileUploadModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    PaginationModule.forRoot()
   ],
   providers: [
     {

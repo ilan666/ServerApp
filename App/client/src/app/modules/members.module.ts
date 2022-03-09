@@ -9,7 +9,7 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
 
 const routes: Routes = [
   {path: '', component:MemberListComponent, pathMatch:'full'},
-  {path: ':id', component:MemberDetailsComponent,}
+  {path: ':id', component:MemberDetailsComponent}
 ]
 
 @NgModule({

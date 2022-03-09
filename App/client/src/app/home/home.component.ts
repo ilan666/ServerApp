@@ -18,18 +18,11 @@ export class HomeComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this.getUsers();
+    // this.getUsers();
   }
 
   registerToggle(){
     this.registerMode = !this.registerMode
-  }
-
-  getUsers(){
-    this.memberService.getMembers().subscribe({
-      next: (users) => {this.users = users},
-      error: (err) => {console.log(err);}
-    })
   }
 
   cancelRegisterMode($event: boolean){
